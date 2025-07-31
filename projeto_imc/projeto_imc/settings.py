@@ -22,9 +22,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure--g1(ra$zeny^4j01bx&et*q3510qeq*$@%wmqrt2!45n4*%c#2'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.getenv('DEBUG', 'False').lower() in ('true', '1', 'yes')
+DEBUG = True        
 
-ALLOWED_HOSTS = ['edupanage.pythonanywhere.com']
+ALLOWED_HOSTS = ['edupanage.pythonanywhere.com', '127.0.0.1', 'localhost']
 
 # Application definition
 

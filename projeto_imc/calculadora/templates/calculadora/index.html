@@ -38,7 +38,14 @@
             </li>
             {% endfor %}
         </ul>
+
+        <!-- Botão para limpar histórico -->
+        <form action="{% url 'limpar_historico' %}" method="post">
+            {% csrf_token %}
+            <button class="botao-limpar" type="submit">Limpar Histórico</button>
+        </form>
         {% endif %}
+
         {% if resultado %}
         <div class="mensagem sucesso">
             <p>Seu IMC é: <strong>{{ resultado.imc|floatformat:2 }}</strong></p>
